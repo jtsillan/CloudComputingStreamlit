@@ -1,5 +1,11 @@
 import streamlit as st
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+
+@st.cache_data
+def download_vader():
+    return nltk.download('vader_lexicon')
 
 
 def sentiment_scores(text):
@@ -13,6 +19,7 @@ def sentiment_scores(text):
     neutral = scores['neu'] * 100
     compound = scores['compound'] * 100
     return scores, positive, neutral, negative, compound
+
 
 def clear_fields():
     st.session_state["input_text"] = ""
@@ -46,4 +53,5 @@ def main():
                          
 
 if __name__=="__main__":
+    download_vader()
     main()
