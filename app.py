@@ -21,7 +21,7 @@ def clear_fields():
 def main():
     st.title("Sentiment Analysis App")
     # Load an image from a file path
-    image_path = "resources\emojis.png"
+    image_path = "emojis.png"
     st.image(image_path, use_container_width=True)
     # Create a form with text area box for the user to input the string
     with st.form("submit_form"):
@@ -38,11 +38,11 @@ def main():
             st.write(scores)
             with c2:
                 if compound >= 5:
-                    st.image("resources\emoji_happy.png", caption=f"Analyze was positive {round(positive, 2)}%")
+                    st.image("emoji_happy.png", caption=f"Analyze was positive {round(positive, 2)}%")
                 elif compound <= -5:
-                    st.image("resources\emoji_sad.png", caption=f"Analyze was negative {round(negative, 2)}%")
+                    st.image("emoji_sad.png", caption=f"Analyze was negative {round(negative, 2)}%")
                 else:
-                    st.image("resources\emoji_neutral.png", caption=f"Analyze was neutral {round(neutral, 2)}%")
+                    st.image("emoji_neutral.png", caption=f"Analyze was neutral {round(neutral, 2)}%")
                          
 
 if __name__=="__main__":
