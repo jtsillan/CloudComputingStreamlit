@@ -9,4 +9,4 @@
     streamlit run app.py
 
 #### Live demo available in link below
-[Streamlit Sentiment Analysis]https://cloudcomputingapp-thx2sxtwzj6h2v3bscwzeb.streamlit.app/
+[Streamlit Sentiment Analysis](https://cloudcomputingapp-thx2sxtwzj6h2v3bscwzeb.streamlit.app/)
