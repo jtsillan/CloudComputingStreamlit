@@ -28,7 +28,7 @@ def clear_fields():
 def main():
     st.title("Sentiment Analysis App")
     # Load an image from a file path
-    image_path = "emojis.png"
+    image_path = "emojis2.png"
     st.image(image_path, use_container_width=True)
     # Create a form with text area box for the user to input the string
     with st.form("submit_form"):
